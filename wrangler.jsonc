@@ -9,7 +9,7 @@
 	"compatibility_date": "2025-09-13",
 	"observability": {
 		"enabled": true
-	}
+	},
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -26,6 +26,17 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
 	// "vars": { "MY_VARIABLE": "production_value" }
+	"vars": {
+		"WX_APPID": "wx2f17a9a7367d2a09",
+		"WX_SECRET": "3404ee629392feb3c1bddfaa13775f75"
+	},
+	"d1_databases": [
+		{
+			"binding": "d1_driver_mate",
+			"database_name": "d1-driver-mate",
+			"database_id": "4d0b8eb4-4faa-4767-ab90-4749030866e6"
+		}
+	]
 	/**
 	 * Note: Use secrets to store sensitive data.
 	 * https://developers.cloudflare.com/workers/configuration/secrets/

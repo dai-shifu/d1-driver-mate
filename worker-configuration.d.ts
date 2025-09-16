@@ -5,7 +5,11 @@ declare namespace Cloudflare {
 	interface Env {
 	}
 }
-interface Env extends Cloudflare.Env {}
+interface Env extends Cloudflare.Env {
+	WX_APPID: string;
+	WX_SECRET: string;
+	d1_driver_mate: D1Database;
+}
 
 // Begin runtime types
 /*! *****************************************************************************
