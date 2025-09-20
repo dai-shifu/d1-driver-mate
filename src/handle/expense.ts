@@ -1,8 +1,7 @@
 // 新增消费信息
 export const handleExpense = async (request: Request, env: Env, ctx: ExecutionContext) => {
     const body = await request.json();
-
-    const { user_id, vehicle_id, category_id, amount, occurred_at, remark, receipt_url } = body;
+    const { user_id, vehicle_id, category_id, amount, occurred_at, remark='', receipt_url='' } = body;
 
     // 参数校验
     if (!user_id || !vehicle_id || !category_id || !amount || !occurred_at) {
@@ -41,6 +40,7 @@ export const handleExpenseList = async (request: Request, env: Env, ctx: Executi
 
     return new Response('查询失败', { status: 500 });
 }
+
 
 export default {
     handleExpense,
