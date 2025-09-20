@@ -12,7 +12,7 @@
  */
 
 import { handleLogin } from './handle';
-import { handleExpense, handleExpenseList ,handleVehicle,handleVehicleList} from './handle/expense';
+import { handleExpense, handleExpenseList ,handleVehicle,handleVehicleList} from './handle/index';
 
 async function handleOptions(request: Request) {
 	return new Response(null, {
