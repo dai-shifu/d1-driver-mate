@@ -1,0 +1,1 @@
+insert into expenses_categories (name) values ('交通');
